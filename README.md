@@ -18,9 +18,38 @@ DB_CONNECTION=sqlite
 
 ## Eloquent base Graphql Example
 
+Download Graphql Playground as you [here](https://github.com/graphql/graphql-playground/releases).
+
 ![](screens/s1.png)
 
-
+### Request Body
+You can change all fields what you want to see on your response.
+```graphql
+{
+  users(first: 5, page: 1) {
+    data {
+      id
+      name
+      posts{
+        id
+        name
+      }
+    }
+    paginatorInfo {
+      count
+      currentPage
+      firstItem
+      hasMorePages
+      lastItem
+      lastPage
+      perPage
+      total
+    }
+  }
+}
+```
+#
+### And my graphql schema as you can see.
 #### ```graphql/schema.graphql```
 ```graphql
 type User {
