@@ -18,7 +18,7 @@ DB_CONNECTION=sqlite
 
 ## Eloquent base Graphql Example
 
-![](screens/Screen Shot 2022-07-31 at 22.50.26.png)
+![](screens/s1.png)
 
 
 #### ```graphql/schema.graphql```
