@@ -1,0 +1,19 @@
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    posts: [Post!]! @hasMany
+}
+
+type Post {
+    id: ID!
+    name: String!
+    content: String!
+    user: [User!]! @belongsTo
+}
+
+type Query {
+    allUsers: [User!]! @all
+    users: [User!]! @paginate
+    posts: [Post!]! @paginate
+}
