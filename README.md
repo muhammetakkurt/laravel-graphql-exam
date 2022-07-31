@@ -4,7 +4,7 @@
 ```touch database/database.sqlite```
 
 ### Copy and create environment file
-```cp env.example env```
+```cp .env.example .env```
 
 ### Change your database for sqlite
 ```
